@@ -10,7 +10,12 @@ import SwiftUI
 
 struct ModalView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            LottieView(filename: "PinJump")
+        }
+        .frame(width: 360, height: 360)
+        .cornerRadius(30)
+        .shadow(radius: 30)
     }
 }
 
